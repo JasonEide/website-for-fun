@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<heml>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pepe's Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"> 
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="images/Pepe.png" height="100" width="100"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="definition.html">Definition</a></li>
+                        <li><a href="contactus.html">Contact us</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1>The Tale of Pepe the Frog</h1>
+                <p>Poggers 
+                    
+                </p>
+                <a href="https://www.reddit.com/r/CopyPastas/comments/73ppq9/the_tale_of_pepe_the_frog/" target="_blank" class="first-but">Click here to view story</a>  
+            </div>
+        </section>
+        <!--More info-->
+        <section class="body">
+            <h1>Why Pepe is so Prevalent in this Era</h1>
+            <p>
+                With pogchamp influencing the cultural normality within twitch as illustrated through <a href="history.html" class="hover_hyperlink">history</a>, pepe emotes became more common after pogchamp was cancelled.
+                Depicted through a frequency chart some guy made with light blue being pogchamp, it is clear that pogchamp and its ancestors were the defining feature within the twitch community.
+            </p>
+            <img src="images/Emote Freq.png" width="50%">
+            <p>Even on google the word pepe has been increased significantly within the past 30 years</p>
+            <img src="images/Pepe Word Freq.png" width="50%">
+        </section>
+        <!--Advertising my Program-->
+        <section class="advertisement">
+            <h1>
+                Wanna see a program I made for this website?
+            </h1>
+            <p>Basically this program grabs every message on a streamer's live twitch chat and finds a specific word. In our case, it would be looking for relevant terms such as pepe, pog, poggers, pogchamp, etc.</p>
+            <img src="images/Twitch_Interface.png" width="50%"><br><br>
+            <a href="https://github.com/JasonEide/twitch-chat-listener" target='_blank' class="yes">Yeah sure show me</a>
+            <a href="https://github.com/JasonEide/twitch-chat-listener" target='_blank' class='no'>Nah I think I'm ok</a>
+            <footer>sorry i got bored</footer>
+        </section>
+        <!--Javascript for Toggle Menu-->>
+        <script>
+            var navLinks = document.getElementById("navLinks")
+            function showMenu(){
+                navLinks.style.right = '0'
+            }
+            function hideMenu(){
+                navLinks.style.right = '-200px'
+            }
+        </script>
+    </body>
+</heml>
